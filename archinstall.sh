@@ -22,7 +22,7 @@ echo "Enter username: "
 read username
 echo "Enter user password: "
 read userpassword
-pacstrap /mnt base base-devel linux linux-firmware git
+pacstrap /mnt base base-devel linux linux-firmware
 genfstab -U /mnt >> /mnt/etc/fstab
 arch-chroot /mnt /bin/bash <<EOF
 
@@ -50,10 +50,12 @@ grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
 systemctl enable NetworkManager.service
 echo "%wheel ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
-echo -e "$password\n$password" | passwd
+#echo -e "$password\n$password" | passwd
+echo -e root:$password | chpasswd
 useradd -m -G wheel,audio,video -s /bin/bash $username
-echo -e "$userpassword\n$userpassword" | passwd $username
+#echo -e "$userpassword\n$userpassword" | passwd $username
+echo -e $username:$password | chpasswd
 exit
 EOF
-umount -R /mnt
+umount -R /mnt &&
 reboot
