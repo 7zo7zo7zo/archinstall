@@ -12,3 +12,7 @@ cd ~/.config/dwm ; sudo make clean install
 cd ~/.config/st ; sudo make clean install
 cd ~/.config/slstatus ; sudo make clean install
 cd ~/.config/dmenu ; sudo make clean install
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+rm -rf yay
