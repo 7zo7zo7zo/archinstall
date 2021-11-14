@@ -18,4 +18,5 @@ fi
 mount $partition /mnt 
 pacstrap /mnt base base-devel linux linux-firmware
 genfstab -U /mnt >> /mnt/etc/fstab
-arch-chroot /mnt ./archinstall2.sh
+arch-chroot /mnt /bin/bash -e <<EOF
+  ./archinstall/archinstall2.sh
