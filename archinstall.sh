@@ -1,3 +1,5 @@
+#!/bin/sh
+
 loadkeys us
 timedatectl set-ntp true
 lsblk
@@ -15,8 +17,6 @@ if [[ $answer = y ]] ; then
 fi
 mount $partition /mnt 
 pacstrap /mnt base base-devel linux linux-firmware
-#!/bin/sh
-
 genfstab -U /mnt >> /mnt/etc/fstab
 arch-chroot /mnt
 
