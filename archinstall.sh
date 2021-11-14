@@ -15,7 +15,13 @@ if [[ $answer = y ]] ; then
   read efipartition
   mkfs.vfat -F 32 $efipartition
 fi
-mount $partition /mnt 
+mount $partition /mnt
+echo "Enter root password: "
+read password
+echo "Enter username: "
+read username
+echo "Enter user password: "
+read userpassword
 pacstrap /mnt base base-devel linux linux-firmware git
 genfstab -U /mnt >> /mnt/etc/fstab
 arch-chroot /mnt /bin/bash <<EOF
@@ -33,7 +39,6 @@ echo "127.0.0.1       localhost" >> /etc/hosts
 echo "::1             localhost" >> /etc/hosts
 echo "127.0.1.1       $hostname.localdomain $hostname" >> /etc/hosts
 mkinitcpio -P
-passwd
 pacman --noconfirm -S grub efibootmgr os-prober networkmanager
 echo "Enter EFI partition: " 
 read efipartition
@@ -45,10 +50,10 @@ grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
 systemctl enable NetworkManager.service
 echo "%wheel ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
-echo "Enter Username: "
-read username
+echo -e "$password\n$password" | passwd
 useradd -m -G wheel,audio,video -s /bin/bash $username
-passwd $username
+echo -e "$userpassword\n$userpassword" | passwd $username
 exit
+EOF
 umount -R /mnt
 reboot
