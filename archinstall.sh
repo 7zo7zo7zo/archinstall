@@ -57,5 +57,5 @@ useradd -m -G wheel,audio,video -s /bin/bash $username
 echo -e $username:$password | chpasswd
 exit
 EOF
-#umount -R /mnt &&
+#umount -R /mnt
 #reboot
