@@ -43,7 +43,7 @@ arch-chroot /mnt /bin/bash <<EOF
   #sed -i 's/GRUB_TIMEOUT=5/GRUB_TIMEOUT=0/g' /etc/default/grub
   grub-mkconfig -o /boot/grub/grub.cfg
   systemctl enable NetworkManager.service
-  //echo "%wheel ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+  echo "%wheel ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
   echo "Enter Username: "
   read username
   useradd -m -G wheel,audio,video -s /bin/bash $username
