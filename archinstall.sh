@@ -40,8 +40,6 @@ echo "::1             localhost" >> /etc/hosts
 echo "127.0.1.1       $hostname.localdomain $hostname" >> /etc/hosts
 mkinitcpio -P
 pacman --noconfirm -S grub efibootmgr os-prober networkmanager
-echo "Enter EFI partition: " 
-read efipartition
 mkdir /boot/efi
 mount $efipartition /boot/efi 
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
