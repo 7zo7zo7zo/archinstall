@@ -1,3 +1,5 @@
+#!/bin/sh
+
 ln -sf /usr/share/zoneinfo/America/Los_Angeles /etc/localtime
 hwclock --systohc
 echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
