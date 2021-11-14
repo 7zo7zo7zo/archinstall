@@ -1,4 +1,4 @@
-sudo pacman --noconfirm --needed -S linux-headers neofetch htop xorg-server xorg-xint libxft libxinerama xorg-xrandr ttf-jetbrains-mono gnu-free-fonts firefox mpv openssh git wget vim neovim youtube-dl
+sudo pacman --noconfirm --needed -S linux-headers neofetch htop xorg-server xorg-xinit libxft libxinerama xorg-xrandr ttf-jetbrains-mono gnu-free-fonts firefox mpv openssh git wget vim neovim youtube-dl
 git clone https://github.com/7zo7zo7zo/dwm-main.git temp/dwm
 mv temp/dwm ~/.config
 git clone https://github.com/7zo7zo7zo/st-main.git temp/st
