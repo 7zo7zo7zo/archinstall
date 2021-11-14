@@ -16,6 +16,6 @@ if [[ $answer = y ]] ; then
   mkfs.vfat -F 32 $efipartition
 fi
 mount $partition /mnt 
-pacstrap /mnt base base-devel linux linux-firmware
+pacstrap /mnt base base-devel linux linux-firmware git
 genfstab -U /mnt >> /mnt/etc/fstab
-arch-chroot /mnt
+arch-chroot /mnt /bin/bash
