@@ -11,8 +11,8 @@ cd ~/.config/dwm ; sudo make clean install
 cd ~/.config/st ; sudo make clean install
 cd ~/.config/slstatus ; sudo make clean install
 cd ~/.config/dmenu ; sudo make clean install
-#git clone https://aur.archlinux.org/yay.git temp/yay
-#cd temp/yay ; makepkg -si
+git clone https://aur.archlinux.org/yay.git temp/yay
+cd temp/yay ; sudo makepkg -si
 systemctl --user enable pulseaudio
 git clone http://github.com/7zo7zo7zo/dotfiles temp/dotfiles
 #sudo mv temp/dotfiles/pacman.conf /etc
