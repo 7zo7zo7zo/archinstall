@@ -15,9 +15,10 @@ cd ~/.config/slstatus ; sudo make clean install
 cd ~/.config/dmenu ; sudo make clean install
 #cd ~/.config/xmenu ; sudo make clean install
 git clone https://aur.archlinux.org/yay.git temp/yay
-cd temp/yay ; sudo makepkg -si
+cd temp/yay ; makepkg -si
 systemctl --user enable pulseaudio
 git clone http://github.com/7zo7zo7zo/dotfiles temp/dotfiles
+rm -rf temp/dotfiles/.git
 #sudo mv temp/dotfiles/pacman.conf /etc
 #sudo mv temp/dotfiles/xorg.conf /etc/X11
 cp -r temp/dotfiles/. ~
