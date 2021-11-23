@@ -7,7 +7,6 @@ git clone https://github.com/7zo7zo7zo/slstatus.git temp/slstatus
 mv temp/slstatus ~/.config
 git clone https://github.com/7zo7zo7zo/dmenu.git temp/dmenu
 mv temp/dmenu ~/.config
-rm -rf temp
 cd ~/.config/dwm ; sudo make clean install
 cd ~/.config/st ; sudo make clean install
 cd ~/.config/slstatus ; sudo make clean install
@@ -15,3 +14,10 @@ cd ~/.config/dmenu ; sudo make clean install
 #git clone https://aur.archlinux.org/yay.git
 #cd yay ; makepkg -si
 #rm -rf yay
+#systemctl --user enable pulseaudio
+#pulseaudio --start
+git clone http://github.com/7zo7zo7zo/dotfiles temp/dotfiles
+#sudo mv temp/dotfiles/pacman.conf /etc
+#sudo mv temp/dotfiles/xorg.conf /etc/X11
+cp -r dotfiles/* ~/*
+rm -rf temp
