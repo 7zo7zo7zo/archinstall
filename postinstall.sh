@@ -16,7 +16,7 @@ cd ./temp/yay ; makepkg -si --noconfirm
 systemctl --user enable --now pulseaudio
 git clone http://github.com/7zo7zo7zo/dotfiles temp/dotfiles
 rm -rf ./temp/dotfiles/.git
-#sudo mv temp/dotfiles/pacman.conf /etc
-#sudo mv temp/dotfiles/xorg.conf /etc/X11
+#sudo mv ./temp/dotfiles/pacman.conf /etc
+#sudo mv ./temp/dotfiles/xorg.conf /etc/X11
 cp -r temp/dotfiles/. ~/.
 rm -rf temp
