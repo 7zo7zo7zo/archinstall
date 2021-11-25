@@ -1,4 +1,4 @@
-sudo pacman --noconfirm --needed -S linux-headers neofetch htop xorg-server xorg-xinit libxft libxinerama xorg-xrandr ttf-jetbrains-mono gnu-free-fonts firefox mpv openssh git wget vim neovim youtube-dl pulseaudio man-db pavucontrol ttf-droid picom ttf-liberation feh python-pywal zathura zathura-pdf-poppler qpdf
+sudo pacman --noconfirm --needed -S linux-headers neofetch htop xorg-server xorg-xinit libxft libxinerama xorg-xrandr ttf-jetbrains-mono gnu-free-fonts firefox mpv openssh git wget vim neovim youtube-dl pulseaudio man-db pavucontrol ttf-droid picom ttf-liberation feh python-pywal zathura zathura-pdf-poppler qpdf cups
 #mkdir temp
 git clone https://github.com/7zo7zo7zo/dwm-main.git temp/dwm
 git clone https://github.com/7zo7zo7zo/st-main.git temp/st
@@ -15,6 +15,7 @@ cd ~/.config/dmenu ; sudo make clean install
 git clone https://aur.archlinux.org/yay.git temp/yay
 cd temp/yay ; makepkg -si --noconfirm
 systemctl --user enable --now pulseaudio
+sudo systemctl enable --now cups
 git clone http://github.com/7zo7zo7zo/dotfiles temp/dotfiles
 rm -rf temp/dotfiles/.git
 #sudo mv temp/dotfiles/pacman.conf /etc
