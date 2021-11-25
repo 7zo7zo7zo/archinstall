@@ -1,4 +1,4 @@
-sudo pacman --noconfirm --needed -S linux-headers neofetch htop xorg-server xorg-xinit libxft libxinerama xorg-xrandr ttf-jetbrains-mono gnu-free-fonts firefox mpv openssh git wget vim neovim youtube-dl pulseaudio man-db pavucontrol ttf-droid picom ttf-liberation
+sudo pacman --noconfirm --needed -S linux-headers neofetch htop xorg-server xorg-xinit libxft libxinerama xorg-xrandr ttf-jetbrains-mono gnu-free-fonts firefox mpv openssh git wget vim neovim youtube-dl pulseaudio man-db pavucontrol ttf-droid picom ttf-liberation feh python-pywal
 #mkdir temp
 git clone https://github.com/7zo7zo7zo/dwm-main.git temp/dwm
 git clone https://github.com/7zo7zo7zo/st-main.git temp/st
@@ -20,4 +20,4 @@ rm -rf temp/dotfiles/.git
 #sudo mv temp/dotfiles/pacman.conf /etc
 #sudo mv temp/dotfiles/xorg.conf /etc/X11
 cp -r temp/dotfiles/. ~
-rm -rf temp
+rm -rf ./temp
