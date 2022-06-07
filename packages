@@ -6,7 +6,7 @@ xorg-xinit
 libxft
 libxinerama
 xorg-xrandr
-ttf-jetbrains-mono
+ttf-fira-code
 gnu-free-fonts
 firefox
 mpv
