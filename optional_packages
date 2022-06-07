@@ -17,7 +17,6 @@ unrar
 xorg-xprop
 feh
 python-pywal
-ttf-fira-code
 libimobiledevice
 godot
 screenkey
@@ -26,3 +25,7 @@ kdenlive
 ueberzug
 linux-zen
 linux-zen-headers
+ttf-jetbrains-mono
+lua-language-server
+pyright
+ccls
