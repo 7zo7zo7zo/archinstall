@@ -20,9 +20,9 @@ systemctl --user enable --now pulseaudio
 systemctl enable --now cups
 TMP=$(mktemp -d)
 #git clone https://aur.archlinux.org/yay.git $TMP/yay
-#cd temp/yay ; makepkg -si --noconfirm
+#cd $TMP/yay ; makepkg -si --noconfirm
 git clone https://aur.archlinux.org/paru.git $TMP/paru
-cd temp/paru ; makepkg -si --noconfirm
+cd $TMP/paru ; makepkg -si --noconfirm
 git clone http://github.com/7zo7zo7zo/dotfiles $TMP/dotfiles
 rm -rf $TMP/dotfiles/.git
 #mv $TMP/dotfiles/pacman.conf /etc
