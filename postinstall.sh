@@ -17,6 +17,7 @@ cd ~/.config/st ; make clean install
 cd ~/.config/dmenu ; make clean install
 cd ~/.config/nsxiv ; make clean install
 systemctl --user enable --now pulseaudio
+systemctl enable --now sshd
 systemctl enable --now cups
 TMP=$(mktemp -d)
 #git clone https://aur.archlinux.org/yay.git $TMP/yay
