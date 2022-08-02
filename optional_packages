@@ -34,3 +34,6 @@ virt-manager
 fontforge
 wine
 acpid
+xdotool
+remmina
+freerdp
