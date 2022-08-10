@@ -4,8 +4,8 @@
 #  echo "Please run as root"
 #  exit
 #fi
-pacman --noconfirm --needed -S $(< packages)
-#pacman --noconfirm --needed -S $(< optional_packages)
+sudo pacman --noconfirm --needed -S $(< packages)
+#sudo pacman --noconfirm --needed -S $(< optional_packages)
 mkdir ~/.config
 git clone https://github.com/7zo7zo7zo/dwm.git ~/.config/dwm
 git clone https://github.com/7zo7zo7zo/st.git ~/.config/st
