@@ -23,7 +23,7 @@ ttf-droid
 picom
 zathura
 zathura-pdf-mupdf
-poppler-utils
+poppler
 qpdf
 cups
 unzip
