@@ -14,6 +14,7 @@ git clone https://git.suckless.org/dmenu ~/.config/dmenu
 git clone https://codeberg.org/nsxiv/nsxiv.git ~/.config/nsxiv
 cd ~/.config/dwm ; sudo make clean install
 cd ~/.config/st ; sudo make clean install
+cd ~/.config/dwmblocks ; sudo make clean install
 cd ~/.config/dmenu ; sudo make clean install
 cd ~/.config/nsxiv ; sudo make clean install
 systemctl --user enable --now pulseaudio
