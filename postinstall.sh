@@ -33,6 +33,6 @@ rm -rf $TMP/dotfiles/.git
 #mv $TMP/dotfiles/pacman.conf /etc
 #mv $TMP/dotfiles/xorg.conf /etc/X11
 cp -r $TMP/dotfiles/. ~
-git clone https://github.com/7zo7zo7zo/brightness $TMP/brightness
-gcc $TMP/brightness -o ~/.local/bin/brightness
+#git clone https://github.com/7zo7zo7zo/brightness $TMP/brightness
+#gcc $TMP/brightness -o ~/.local/bin/brightness
 rm -rf $TMP
