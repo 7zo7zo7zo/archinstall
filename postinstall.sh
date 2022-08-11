@@ -1,9 +1,12 @@
 #!/bin/sh
 
-#if [ "$EUID" -ne 0 ]; then
-#  echo "Please run as root"
-#  exit
-#fi
+if [ "$EUID" -eq 0 ]; then
+  read -p "You probably don't want to run this as root. Countinue? [y/n] " answer
+  if [ $answer = n ] ; then
+    exit
+  fi
+fi
+
 sudo pacman --noconfirm --needed -S $(< packages)
 #sudo pacman --noconfirm --needed -S $(< optional_packages)
 mkdir ~/.config
@@ -30,4 +33,6 @@ rm -rf $TMP/dotfiles/.git
 #mv $TMP/dotfiles/pacman.conf /etc
 #mv $TMP/dotfiles/xorg.conf /etc/X11
 cp -r $TMP/dotfiles/. ~
+git clone https://github.com/7zo7zo7zo/brightness $TMP/brightness
+gcc $TMP/brightness -o ~/.local/bin/brightness
 rm -rf $TMP
