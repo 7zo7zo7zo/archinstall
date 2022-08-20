@@ -20,7 +20,6 @@ cd ~/.config/st ; sudo make clean install
 cd ~/.config/dwmblocks ; sudo make clean install
 cd ~/.config/dmenu ; sudo make clean install
 cd ~/.config/nsxiv ; sudo make clean install
-systemctl --user enable --now pulseaudio
 sudo systemctl enable --now sshd
 sudo systemctl enable --now cups
 TMP=$(mktemp -d)
