@@ -17,7 +17,6 @@ wget
 vim
 neovim
 youtube-dl
-pulseaudio
 man-db
 pavucontrol
 ttf-droid
@@ -36,3 +35,7 @@ xclip
 xautolock
 entr
 usbutils
+pipewire-pulse
+pipewire-alsa
+pipewire-jack
+qjackctl
