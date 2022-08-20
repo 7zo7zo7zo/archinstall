@@ -37,3 +37,7 @@ acpid
 xdotool
 remmina
 freerdp
+bluez
+bluez-utils
+pulseaudio
+pulseaudio-bluetooth
