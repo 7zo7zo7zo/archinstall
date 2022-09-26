@@ -41,3 +41,4 @@ bluez
 bluez-utils
 pulseaudio
 pulseaudio-bluetooth
+evtest
