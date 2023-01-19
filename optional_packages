@@ -43,3 +43,4 @@ pulseaudio
 pulseaudio-bluetooth
 evtest
 exfat-utils
+qjackctl
