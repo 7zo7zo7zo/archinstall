@@ -38,4 +38,4 @@ usbutils
 pipewire-pulse
 pipewire-alsa
 pipewire-jack
-qjackctl
+qpwgraph
