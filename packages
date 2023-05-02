@@ -16,7 +16,7 @@ git
 wget
 vim
 neovim
-youtube-dl
+yt-dlp
 man-db
 pavucontrol
 ttf-droid
