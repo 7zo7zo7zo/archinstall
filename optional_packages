@@ -29,6 +29,7 @@ ttf-jetbrains-mono
 lua-language-server
 pyright
 ccls
+clang
 blender
 virt-manager
 fontforge
