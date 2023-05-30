@@ -25,7 +25,6 @@ kdenlive
 ueberzug
 linux-zen
 linux-zen-headers
-ttf-jetbrains-mono
 lua-language-server
 pyright
 ccls
@@ -47,3 +46,5 @@ exfat-utils
 qjackctl
 youtube-dl
 libwacom
+ttf-nerd-fonts-symbols-mono
+ttf-jetbrains-mono-nerd
