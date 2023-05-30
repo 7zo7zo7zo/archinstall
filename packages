@@ -7,7 +7,7 @@ libxft
 libxinerama
 imlib2
 xorg-xrandr
-ttf-fira-code
+ttf-jetbrains-mono
 gnu-free-fonts
 firefox
 mpv
@@ -28,7 +28,7 @@ qpdf
 cups
 unzip
 man-pages
-ttf-nerd-fonts-symbols-common
+ttf-nerd-fonts-symbols
 gimp
 playerctl
 xclip
