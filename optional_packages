@@ -15,7 +15,7 @@ hplip
 openjdk11-src
 unrar
 xorg-xprop
-fehmesa-driver", "mesa-vdpau" and "lib32-mesa-vdpau" packages?
+feh
 python-pywal
 libimobiledevice
 godot
@@ -54,3 +54,4 @@ lib32-gnutls
 lib32-nvidia-utils
 lib32-mesa
 lib32-mesa-utils
+xwallpaper
