@@ -55,3 +55,5 @@ lib32-nvidia-utils
 lib32-mesa
 lib32-mesa-utils
 xwallpaper
+libratbag
+piper
