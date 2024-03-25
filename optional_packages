@@ -63,3 +63,5 @@ zenity
 winetricks
 torbrowser-launcher
 texlive-binextra
+sof-firmware
+alsa-firmware
