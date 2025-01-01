@@ -67,3 +67,4 @@ sof-firmware
 alsa-firmware
 texlive-fontsrecommended
 texlive-fontsextra
+python-pipx
